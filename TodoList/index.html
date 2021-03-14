@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1 align="center">Todo List</h1>
+
+
+        <div class="row">
+
+            <!-- Input of New Task  -->
+
+            <div class="col-md-7">
+                <div class="m-3">
+                    <label for="inpNewTask" class="form-label">New Task</label>
+                    <input type="text" class="form-control" id="inpNewTask" aria-describedby="newTaskHelp" placeholder="Enter New Task">
+                    <div id="newTaskHelp" class="form-text">A short one line discription of your task</div>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="col-md-5 row">
+                <button type="button" class="btn btn-success col-sm col-md-4 p-1 mx-2 my-2" disabled id="btnAdd"><i class="fas fa-plus"></i> ADD </button>
+                <button type="button" class="btn btn-warning col-sm col-md-4 p-1 mx-2 my-2" disabled id="btnReset"><i class="fas fa-backspace"></i> Reset</button>
+                <button type="button" class="btn btn-info col-sm col-md-4 p-1 mx-2 my-2" disabled id="btnSort"><i class="fas fa-sort-amount-down"></i> Sort </button>
+                <button type="button" class="btn btn-danger col-sm col-md-4 p-1 mx-2 my-2" disabled id="btnClear"><i class="fas fa-trash-alt"></i> Clear</button>
+            </div>
+
+        </div>
+
+        <!-- List of the Tasks -->
+
+        <ul class="row list-group row" id="ulTask"></ul>
+
+    </div>
+    
+</body>
+</html>
